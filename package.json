@@ -1,0 +1,17 @@
+{
+  "name": "qrypta-genesis-prover",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "gen:bnb": "node scripts/gen_inputs.mjs --chain bnb",
+    "gen:eth": "node scripts/gen_inputs.mjs --chain eth",
+    "prove:bnb": "node scripts/prove.mjs --chain bnb",
+    "prove:eth": "node scripts/prove.mjs --chain eth",
+    "demo:bnb": "node scripts/demo_flow.mjs --chain bnb --fake",
+    "demo:eth": "node scripts/demo_flow.mjs --chain eth --fake"
+  },
+  "dependencies": {
+    "ethers": "^6.15.0"
+  }
+}
